@@ -3,8 +3,8 @@ from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView
 
-from .forms import AccountForm
-from .models import Account
+from .forms import AccountForm, BookForm
+from .models import Account, Book
 
 
 class AccountListView(ListView):
@@ -30,3 +30,29 @@ class AccountUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('account_detail', args=[self.object.pk])
+
+
+class BookListView(ListView):
+    model = Book
+
+
+class BookDetailView(DetailView):
+    model = Book
+
+
+class BookCreateView(CreateView):
+    model = Book
+    fields = ['description', 'valid_from', 'valid_to']
+    form_class = BookForm
+
+    def get_success_url(self):
+        return reverse_lazy('book_detail', args=[self.object.pk])
+
+
+class BookUpdateView(UpdateView):
+    model = Book
+    fields = ['description', 'valid_from', 'valid_to']
+    form_class = BookForm
+
+    def get_success_url(self):
+        return reverse_lazy('book_detail', args=[self.object.pk])

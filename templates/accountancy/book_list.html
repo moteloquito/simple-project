@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block styles %}
+{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Cuentas</div>
+    <div class="panel-body">
+      <ul>
+	{% for book in object_list %}
+	<li>{{ book }}</li>
+	{% empty %}
+	<li>No books yet.</li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

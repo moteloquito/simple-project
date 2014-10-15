@@ -30,5 +30,26 @@ class Account(models.Model):
         verbose_name_plural = _('account_plural')
 
     def __str__(self):
-        return self.description
+        return u'%s' % self.description
+
+    def __unicode__(self):
+        return u'%s' % self.description
     
+
+class Book(models.Model):
+    description = models.CharField(max_length=128,
+                                   verbose_name=_('book_description'))
+    valid_from = models.DateField(verbose_name=_('book_valid_from'))
+    valid_to = models.DateField(verbose_name=_('book_valid_to'))
+    root = models.ForeignKey(Account, null=False, blank=False,
+                             verbose_name=_('book_root'))
+
+    class Meta():
+        verbose_name = _('book')
+        verbose_name_plural = _('book_plural')
+
+    def __str__(self):
+        return u'%s' % self.description
+
+    def __unicode__(self):
+        return u'%s' % self.description

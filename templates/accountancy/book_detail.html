@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Libro</div>
+    <div class="panel-body">
+      <ul>
+	<li>Id: {{ object.id }}</li>
+	<li>Descripción: {{ object.description }}</li>
+	<li>Válido desde: {{ object.valid_from }}</li>
+	<li>Válido hasta: {{ object.valid_to }}</li>
+	<li>Cuenta raiz: {{ object.root.id }} {{ object.root }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -21,7 +21,8 @@ class Account(models.Model):
     account_type = models.CharField(max_length=4,
                                     choices=ACCOUNT_TYPE_CHOICES,
                                     verbose_name=_('account_type'))
-    parent = models.ForeignKey('self', null=True, related_name='parent_account',
+    parent = models.ForeignKey('self', null=True, blank=True,
+                               related_name='parent_account',
                                verbose_name=_('account_parent'))
 
     class Meta():

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% block title %}{% trans "landscape_title" %}{% endblock %}
+{% block body %}
+
+{% include "users/navbar.html" %}
+Welcome {{ user.user.first_name }} {{ user.user.last_name }}
+<br>
+Sos del tipo {{ user.user_type }}
+<hr>
+{% endblock %}

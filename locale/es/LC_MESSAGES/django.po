@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-14 16:24-0300\n"
+"PO-Revision-Date: 2014-10-14 16:25-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 16bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accountancy\models.py:11
+msgid "account_type_root"
+msgstr "raíz"
+
+#: .\accountancy\models.py:12
+msgid "account_type_assets"
+msgstr "activos"
+
+#: .\accountancy\models.py:13
+msgid "account_type_liabilities"
+msgstr "pasivos"
+
+#: .\accountancy\models.py:14
+msgid "account_type_obligations"
+msgstr "obligaciones"
+
+#: .\accountancy\models.py:20
+msgid "account_description"
+msgstr "descripción"
+
+#: .\accountancy\models.py:23
+msgid "account_type"
+msgstr "tipo de cuenta"
+
+#: .\accountancy\models.py:25
+msgid "account_parent"
+msgstr "cuenta padre"
+
+#: .\accountancy\models.py:28
+msgid "account"
+msgstr "cuenta"
+
+#: .\accountancy\models.py:29
+msgid "account_plural"
+msgstr "cuentas"
+
+#: .\templates\accountancy\account_form.html:12
+msgid "create_new"
+msgstr "Crear"
+
+#: .\templates\registration\login.html:4
+msgid "login_title"
+msgstr "Iniciar sesión"
+
+#: .\templates\registration\login.html:13
+msgid "login_init_session"
+msgstr "Iniciar sesión"
+
+#: .\templates\registration\login.html:22
+msgid "login_error"
+msgstr "Nombre de usuario o contraseña inválido"
+
+#: .\templates\registration\login.html:27
+msgid "login_username"
+msgstr "Usuario"
+
+#: .\templates\registration\login.html:31
+msgid "login_password"
+msgstr "Contraseña"
+
+#: .\templates\registration\login.html:36
+msgid "login_remember_me"
+msgstr "Recordarme"
+
+#: .\templates\registration\login.html:39
+msgid "login_submit"
+msgstr "Entrar"
+
+#: .\templates\users\landscape.html:4
+msgid "landscape_title"
+msgstr "Inicio"
+
+#: .\templates\users\navbar.html:33
+msgid "landscape_settings"
+msgstr "Configuración"
+
+#: .\templates\users\navbar.html:34
+msgid "landscape_mysettings"
+msgstr "Mi cuenta"
+
+#: .\templates\users\navbar.html:35
+msgid "logout"
+msgstr "Salir"
+
+#: .\users\models.py:12
+msgid "type_Administrator"
+msgstr "administrador"
+
+#: .\users\models.py:13
+msgid "type_Regular"
+msgstr "normal"
+
+#: .\users\models.py:14
+msgid "type_Supervisor"
+msgstr "supervisor"
+
+#: .\users\models.py:15
+msgid "type_Auditor"
+msgstr "auditor"
+
+#: .\users\models.py:24
+msgid "custom_user_user_type"
+msgstr "tipo de usuario"
+
+#: .\users\models.py:27
+msgid "custom_user"
+msgstr "usuario"
+
+#: .\users\models.py:28
+msgid "custom_user_plural"
+msgstr "usuarios"

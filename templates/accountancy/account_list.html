@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Cuentas</div>
+    <div class="panel-body">
+      <ul>
+	{% for account in object_list %}
+	<li>{{ account.id }} - {{ account.description }}</li>
+	{% empty %}
+	<li>No accounts yet.</li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

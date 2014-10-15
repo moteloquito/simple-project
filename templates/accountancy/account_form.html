@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+{% load i18n %}
+{% block body %}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Crear cuenta</div>
+    <div class="panel-body">
+      <form action="" method="post" role="form">
+	{% csrf_token %}
+	{{ form | bootstrap }}
+	<input type="submit" class="btn btn-primary" value="{% trans "create_new" %}" />
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

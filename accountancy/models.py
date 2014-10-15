@@ -22,7 +22,7 @@ class Account(models.Model):
                                     choices=ACCOUNT_TYPE_CHOICES,
                                     verbose_name=_('account_type'))
     parent = models.ForeignKey('self', null=True, blank=True,
-                               related_name='parent_account',
+                               related_name='childs',
                                verbose_name=_('account_parent'))
 
     class Meta():

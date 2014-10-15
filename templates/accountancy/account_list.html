@@ -6,7 +6,13 @@
     <div class="panel-body">
       <ul>
 	{% for account in object_list %}
-	<li>{{ account.id }} - {{ account.description }}</li>
+	  {% if account.account_type == 'ROOT' %}
+	    <div class="tree well">
+              {% with account=account template_name="accountancy/account_tree.html" %}
+                {% include template_name %}
+              {% endwith %}
+	    </div>
+	  {% endif %}
 	{% empty %}
 	<li>No accounts yet.</li>
 	{% endfor %}

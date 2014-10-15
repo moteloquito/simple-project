@@ -1,0 +1,10 @@
+<ul>
+  <li>
+    <span>{{ account.description }}</span>
+    {% for a in account.childs.all %}
+      {% with account=a template_name="accountancy/account_tree.html" %}
+        {% include template_name%}
+      {% endwith %}
+    {% endfor %}
+  </li>
+</ul>

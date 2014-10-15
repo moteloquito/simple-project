@@ -16,7 +16,7 @@ class AccountForm(ModelForm):
         if account_type:
             if account_type == 'ROOT':
                 if parent:
-                    raise ValidationError('El tipo raíz no permite padre',
+                    raise ValidationError('El tipo raiz no permite padre',
                                           code='error1')
             else:
                 if not parent:

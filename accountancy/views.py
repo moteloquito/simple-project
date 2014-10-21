@@ -3,8 +3,12 @@ from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 from .forms import AccountForm, BookForm
 from .models import Account, Book
+from .serializers import AccountSerializer
 
 
 class AccountListView(ListView):
@@ -30,6 +34,16 @@ class AccountUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('account_detail', args=[self.object.pk])
+
+
+class AccountList(APIView):
+    """
+    List all accounts, or create a new account.
+    """
+    def get(self, request, format=None):
+        accounts = Account.objects.all()
+        serializer = AccountSerializer(accounts, many=True)
+        return Response(serializer.data)
 
 
 class BookListView(ListView):

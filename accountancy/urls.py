@@ -1,6 +1,8 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 
-from .views import AccountListView, AccountDetailView, AccountCreateView, AccountUpdateView, BookListView, BookDetailView, BookCreateView, BookUpdateView
+from .views import AccountListView, AccountDetailView, AccountCreateView
+from .views import AccountUpdateView, AccountDeleteView, BookListView
+from .views import BookDetailView, BookCreateView, BookUpdateView
 
 
 urlpatterns = patterns(
@@ -22,6 +24,10 @@ urlpatterns = patterns(
     url(r'^account/update/(?P<pk>[\w-]+)$',
         AccountUpdateView.as_view(),
         name='account_update'),
+
+    url(r'^account/delete/(?P<pk>[\w-]+)$',
+        AccountDeleteView.as_view(),
+        name='account_delete'),
 
     # Book
     url(r'^book/$',

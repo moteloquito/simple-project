@@ -47,6 +47,3 @@ class BookForm(ModelForm):
         if commit:
             instance.save()
         return instance
-        
-        
-    

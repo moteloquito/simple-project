@@ -8,128 +8,164 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 16:24-0300\n"
+"POT-Creation-Date: 2014-10-20 21:48-0300\n"
 "PO-Revision-Date: 2014-10-08 14:15-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\accountancy\models.py:11
+#: accountancy/models.py:11
 msgid "account_type_root"
 msgstr ""
 
-#: .\accountancy\models.py:12
+#: accountancy/models.py:12
 msgid "account_type_assets"
 msgstr ""
 
-#: .\accountancy\models.py:13
+#: accountancy/models.py:13
 msgid "account_type_liabilities"
 msgstr ""
 
-#: .\accountancy\models.py:14
+#: accountancy/models.py:14
 msgid "account_type_obligations"
 msgstr ""
 
-#: .\accountancy\models.py:20
+#: accountancy/models.py:20
 msgid "account_description"
 msgstr ""
 
-#: .\accountancy\models.py:23
+#: accountancy/models.py:23
 msgid "account_type"
 msgstr ""
 
-#: .\accountancy\models.py:25
+#: accountancy/models.py:26
 #, fuzzy
 #| msgid "custom_user_plural"
 msgid "account_parent"
 msgstr "users"
 
-#: .\accountancy\models.py:28
+#: accountancy/models.py:29
 msgid "account"
 msgstr ""
 
-#: .\accountancy\models.py:29
+#: accountancy/models.py:30
 #, fuzzy
 #| msgid "custom_user_plural"
 msgid "account_plural"
 msgstr "users"
 
-#: .\templates\accountancy\account_form.html:12
+#: accountancy/models.py:41
+msgid "book_description"
+msgstr ""
+
+#: accountancy/models.py:42
+msgid "book_valid_from"
+msgstr ""
+
+#: accountancy/models.py:43
+msgid "book_valid_to"
+msgstr ""
+
+#: accountancy/models.py:45
+msgid "book_root"
+msgstr ""
+
+#: accountancy/models.py:48
+msgid "book"
+msgstr ""
+
+#: accountancy/models.py:49
+#, fuzzy
+#| msgid "custom_user_plural"
+msgid "book_plural"
+msgstr "users"
+
+#: templates/accountancy/account_confirm_delete.html:6
+msgid "account_delete_confirm_message"
+msgstr ""
+
+#: templates/accountancy/account_confirm_delete.html:7
+msgid "confirm"
+msgstr ""
+
+#: templates/accountancy/account_form.html:12
+#: templates/accountancy/book_form.html:12
 msgid "create_new"
 msgstr ""
 
-#: .\templates\registration\login.html:4
+#: templates/registration/login.html:4
 msgid "login_title"
 msgstr "Login"
 
-#: .\templates\registration\login.html:13
+#: templates/registration/login.html:13
 msgid "login_init_session"
 msgstr "Login"
 
-#: .\templates\registration\login.html:22
+#: templates/registration/login.html:22
 msgid "login_error"
 msgstr "Invalid username or password"
 
-#: .\templates\registration\login.html:27
+#: templates/registration/login.html:27
 msgid "login_username"
 msgstr "Username"
 
-#: .\templates\registration\login.html:31
+#: templates/registration/login.html:31
 msgid "login_password"
 msgstr "Password"
 
-#: .\templates\registration\login.html:36
+#: templates/registration/login.html:36
 msgid "login_remember_me"
 msgstr "Remember me"
 
-#: .\templates\registration\login.html:39
+#: templates/registration/login.html:39
 msgid "login_submit"
 msgstr "Login"
 
-#: .\templates\users\landscape.html:4
+#: templates/users/landscape.html:4
 #, fuzzy
 #| msgid "login_title"
 msgid "landscape_title"
 msgstr "Login"
 
-#: .\templates\users\navbar.html:33
+#: templates/users/navbar.html:33
 msgid "landscape_settings"
 msgstr ""
 
-#: .\templates\users\navbar.html:34
+#: templates/users/navbar.html:34
 msgid "landscape_mysettings"
 msgstr ""
 
-#: .\templates\users\navbar.html:35
+#: templates/users/navbar.html:35
 msgid "logout"
 msgstr ""
 
-#: .\users\models.py:12
+#: users/models.py:12
 msgid "type_Administrator"
 msgstr "Administrator"
 
-#: .\users\models.py:13
+#: users/models.py:13
 msgid "type_Regular"
 msgstr "Regular"
 
-#: .\users\models.py:14
+#: users/models.py:14
 msgid "type_Supervisor"
 msgstr "Supervisor"
 
-#: .\users\models.py:15
+#: users/models.py:15
 msgid "type_Auditor"
 msgstr "Auditor"
 
-#: .\users\models.py:24
+#: users/models.py:24
 msgid "custom_user_user_type"
 msgstr "type"
 
-#: .\users\models.py:27
+#: users/models.py:27
 msgid "custom_user"
 msgstr "user"
 
-#: .\users\models.py:28
+#: users/models.py:28
 msgid "custom_user_plural"
 msgstr "users"

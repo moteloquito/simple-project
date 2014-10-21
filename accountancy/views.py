@@ -1,7 +1,7 @@
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
 from .forms import AccountForm, BookForm
 from .models import Account, Book
@@ -30,6 +30,13 @@ class AccountUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('account_detail', args=[self.object.pk])
+
+
+class AccountDeleteView(DeleteView):
+    model = Account
+
+    def get_success_url(self):
+        return reverse_lazy('account_list')
 
 
 class BookListView(ListView):

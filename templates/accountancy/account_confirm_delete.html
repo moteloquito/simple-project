@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body %}
+{% if object.childs.count > 0 %}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Cuenta</div>
+    <div class="panel-body">
+      <p class="bg-danger">
+	El objeto {{ object }} tiene hijos, no se puede eliminar.
+      </p>
+    </div>
+  </div>
+</div>
+{% else %}
+<form action="" method="post">
+  {% csrf_token %}
+  <p>{% trans "account_delete_confirm_message" %} {{ object }}?</p>
+  <input type="submit" value="{% trans "confirm" %}" class="btn btn-primary" />
+</form>
+{% endif %}
+{% endblock %}
